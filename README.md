@@ -1,2 +1,3 @@
 # Styled-Components-template
- My personal styled components template for most projects
+
+ My personal styled components template for most projects.
