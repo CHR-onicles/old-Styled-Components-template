@@ -1,4 +1,3 @@
-// Current solution is to totally copy functions from original files into same file as test to prevent import and export errors
 import { alpha, rem } from './funcUtils'
 
 
@@ -14,7 +13,7 @@ test('Throw error if hex value is wrong', () => {
 });
 
 test('Throw error if hex value is less than 6 characters', () => {
-    expect(() => alpha('#fff')).toThrow(Error); // wrap expected error function to prevent it from executing and failing the test
+    expect(() => alpha('#fff')).toThrow(Error);
 });
 
 test('Throw error if hex value is more than 6 characters', () => {
