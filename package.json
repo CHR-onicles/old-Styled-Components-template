@@ -1,8 +1,15 @@
 {
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
     "jest": "^27.5.1",
     "styled-components": "^5.3.3"
-  },"scripts": {
-    "test": "jest"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   }
 }
