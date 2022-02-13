@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-// Breakpoints object with values from mobile to larger screens
+// Breakpoints with values from mobile(default) to larger screens
 export const bp = {
     small: `${rem(768, true)}em`,
     medium: `${rem(1024, true)}em`,

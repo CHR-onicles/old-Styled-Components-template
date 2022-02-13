@@ -3,7 +3,7 @@ export const rem = (value, omitUnit = false) => {
     return `${(value / 16)}${omitUnit === true ? '' : 'rem'}`;
 }
 
-// Helper function to add alpha values to rgb and hsl colors
+// Helper function to add alpha values to hsl colors
 export const alpha = (color, opacity = 1) => {
     const hex_pattern = /^#([A-Fa-f0-9]{6})$/
     const hsl_pattern = /hsl\(\s*([0-2]?[0-9]{1,2}|3[0-5][0-9]|360)\s*,\s*(0|[1-9][0-9]?|100)%\s*,\s*(0|[1-9][0-9]?|100)%\s*\)/ // chose to be explicit on the digits to prevent evaluating wrong digits

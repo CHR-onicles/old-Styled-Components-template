@@ -37,9 +37,9 @@ test('Throw error if rgb or any other wrong format is provided', () => {
 });
 
 test('Alpha function should accept and convert hsl values', () => {
-    expect(alpha('hsl(0,0%,0%)', 0)).toBe('hsl(0,0%,0%,0)');
+    expect(alpha('hsl(0,0%,0%)', 0.2)).toBe('hsl(0,0%,0%,0.2)');
 })
 
 test('Alpha function should accept and convert hsl values with opacity already provided', () => {
-    expect(alpha('hsl(0, 0%, 0%, 0.5)', .1)).toBe('hsl(0, 0%, 0%,0.1)');
+    expect(alpha('hsl(0, 0%, 0%, 0.5)', .1)).toBe('hsl(0, 0%, 0%,0.1)'); // "hsl" and "hsla" are aliases and both support alpha values so I'll stick with "hsl"
 })
